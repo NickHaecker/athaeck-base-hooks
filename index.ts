@@ -1,7 +1,7 @@
 import { EventEmitter } from "events"
 
 export class BaseHooks extends EventEmitter {
-
+    
     public DispatchHook(hook: string, body: any) {
         this.emit(hook, body)
     }
